@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blog2pdf</title>
+    <style>
+      body {
+        width: 600px;
+        height: 250px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #b00b69;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo {
+        width: 200px;
+        height: 100px;
+        background: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="logo" src="../blog2pdf.png" alt="logo" />
+      <p>
+        This extension can download articles in PDF form from any blog site.
+      </p>
+      <span>Click the 'Generate PDF' button to download.</span>
+      <button id="web2pdf">Generate PDF</button>
+    </div>
+
+    <script src="../popup.js"></script>
+  </body>
+</html>
